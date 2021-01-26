@@ -73,7 +73,7 @@ class TodoApp extends React.Component {
   }
 
   updateTodo = (todo) => {
-    this.setState({todos: [...this.state.todos.filter(el => el.id != todo.id), todo]})
+    this.setState({todos: [...this.state.todos.filter(el => el.id !== todo.id), todo]})
   }
 
   render() {
